@@ -54,7 +54,7 @@ class ManageNotice extends Component {
       this.setState({
         data: res.data.data
       })
-      console.log('通知数据:', this.state.data)
+      // console.log('通知数据:', this.state.data)
     }).catch(err => {
       console.log(err)
     })
@@ -99,6 +99,8 @@ class ManageNotice extends Component {
       method: 'post',
       body: id,
       credentials: 'include'//解决fetch跨域session丢失
+    }).then(function(res) {
+      alert('删除成功！')
     })
   }
 
