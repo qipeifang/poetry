@@ -28,6 +28,7 @@ import ManagePoetry from './pages/admin/manage/poetry_all/poetry/index.js'
 import ManagePoetryDynasty from './pages/admin/manage/poetry_all/poetryDynasty/index.js'
 import ManagePoetryType from './pages/admin/manage/poetry_all/poetryType/index.js'
 import ManagePoet from './pages/admin/manage/poetry_all/poet/index.js'
+import ManageUpload from './pages/admin/manage/upload/index.js'
 
 import DynastyPoetry from './pages/web/poetry/dynasty/index.js'
 // import DynastyPoetry from './pages/web/poetry/dynasty/index.js'
@@ -72,6 +73,7 @@ class App extends React.Component {
           <Route path="/admin/managePoetryDynasty" component={ManagePoetryDynasty}></Route>
           <Route path="/admin/managePoetryType" component={ManagePoetryType}></Route>
           <Route path="/admin/managePoet" component={ManagePoet}></Route>
+          <Route path="/admin/manageUpload" component={ManageUpload}></Route>
 
           {/* 点击不同朝代后跳转的诗词页面 */}
           <Route path="/poetry/dynasty/:id" component={DynastyPoetry}></Route>
